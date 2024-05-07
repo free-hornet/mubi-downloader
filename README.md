@@ -33,19 +33,12 @@ Mubi is a streaming service that offers a carefully curated selection of movies 
 
 ## Usage
 
-1. Open the `mubi_downloader.py` file in a text editor.
-2. Replace all the 'ADDHERE' strings with the relevant data, which can be obtained by watching your network traffic when streaming a movie from MUBI. Most of these elements can be obtained from a single URL. 
-   - For example, to get the movie ID (in the URL) and the Authorization Bearer (in the headers), filter and select the result with "secure_url" in your network traffic manager. 
+1. When you've added all the needed programs into valid folders, run the script.
+2. If it's your first time starting the script or the config is invalid, you will be prompted to ender bearer and a valid folder path. 
+   - For folder path, thats up to you, to find the auth bearer (and the movie ID which is very important), open network traffic manager in chrome and search for secure URL like so:
+   ![Showing where to find AUTH bearer and movie ID](https://i.ibb.co/Hx4s269/image.png) 
    - Then, search for "cenc" to get the value for the header "dt-custom-data:". Copy this value and paste it into the corresponding one in the script.
-3. Edit the folder path, and thats it.
-4. Open your terminal and navigate to the directory containing the `mubi_downloader.py` file. (or add it to PATH)
-5. Run the following command in your terminal:
-
-    ```
-    python mubi_downloader.py
-    ```
-
-6. If you entered all the details correctly, your movie will start downloading.
+   ![Showing where to find dt-custom-data](https://i.ibb.co/LQBQHcF/image.png)
 
 ## Legal Notice
 - This program is intended solely for educational and informational purposes. The authors and contributors of this program do not condone or encourage any illegal or unethical activities. Any misuse of this program for unlawful or unethical purposes is strictly prohibited.
