@@ -19,7 +19,7 @@ Mubi is a streaming service that offers a carefully curated selection of movies 
     * Run the 'install_requirements.bat'
     * Manually install each library specified in 'requirements.txt'.
     * Run 'pip install -r requirements.txt'
-3. Install [shaka-packager](https://github.com/shaka-project/shaka-packager/releases/tag/v2.6.1) and [N_m3u8DL-RE](https://github.com/nilaoda/N_m3u8DL-RE/releases)
+3. Install [shaka-packager](https://github.com/shaka-project/shaka-packager/releases) (you will have to rename mpd_generator to shaka-packager) and [N_m3u8DL-RE](https://github.com/nilaoda/N_m3u8DL-RE/releases)
 4. Once installed, add the folders where the tools are installed to your system's `PATH` environment variable. 
 
    - On Windows:
