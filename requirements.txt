@@ -1,6 +1,1 @@
 requests
-json
-os
-re
-base64
-shutil
