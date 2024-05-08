@@ -36,10 +36,9 @@ Mubi is a streaming service that offers a carefully curated selection of movies 
 1. When you've added all the needed programs into valid folders, run the script.
 2. If it's your first time starting the script or the config is invalid, you will be prompted to ender bearer and a valid folder path. 
    - For folder path, thats up to you, to find the auth bearer (and the movie ID which is very important), open network traffic manager in chrome and search for secure URL like so:
-   ![Showing where to find AUTH bearer and movie ID](https://i.ibb.co/Hx4s269/image.png) 
+   ![Showing where to find AUTH bearer and movie ID](https://i.ibb.co/LQBQHcF/image.png)
    - Then, search for "cenc" to get the value for the header "dt-custom-data:". Copy this value and paste it into the corresponding one in the script.
-   ![Showing where to find dt-custom-data](https://i.ibb.co/LQBQHcF/image.png)
-
+   ![Showing where to find dt-custom-data](https://i.ibb.co/Hx4s269/image.png) 
 ## Legal Notice
 - This program is intended solely for educational and informational purposes. The authors and contributors of this program do not condone or encourage any illegal or unethical activities. Any misuse of this program for unlawful or unethical purposes is strictly prohibited.
 - Users must agree to use this program only for lawful purposes and in compliance with all applicable laws and regulations. The authors and contributors of this program will not be held responsible for any misuse or illegal activity undertaken by users.
