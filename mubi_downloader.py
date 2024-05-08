@@ -68,6 +68,9 @@ def main():
     mubi = json.loads(response.text)
     url = mubi['url']
     def get_valid_filename(title):
+        invalid_chars = '<>:"/\|?*'
+        title = ''.join('_' if c in invalid_chars else c for c in title)
+
         while True:
             response = input(f"Is this an appropriate filename? '{title}' [Y/N]: ").strip().upper()
             if response == 'Y':
@@ -76,6 +79,7 @@ def main():
                 return input('Enter final file name: ').strip()
             else:
                 print("Please enter 'Y' for yes or 'N' for no.")
+
     title = mubi['mux']['video_title']
     name = get_valid_filename(title)
     kid = requests.get(url)
@@ -93,7 +97,7 @@ def main():
 
     json_data = {
         'license': 'https://lic.drmtoday.com/license-proxy-widevine/cenc/?specConform=true',
-        'headers': f'dt-custom-data: {custom_data}',
+        'headers': f'Dt-Custom-Data: {custom_data}',
         'pssh': pssh,                                                
         'buildInfo': '',                                                 
         'proxy': '',                                                      
